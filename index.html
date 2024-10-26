@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-    
+
     <!-- font_Awasome cdn -->
     <script src="https://kit.fontawesome.com/310af2a5ce.js" crossorigin="anonymous"></script>
 
     <!-- fav-icone -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath d='M192 384h224c97.2 0 176-78.8 176-176c0-10.6-8.5-19.1-19.1-19.1H448V144h104.9c10.6 0 19.1-8.5 19.1-19.1V96c0-10.6-8.5-19.1-19.1-19.1H448c-26.5 0-48 21.5-48 48v48H192c-53 0-96 43-96 96c0 64.5 60.7 116.9 135.6 127.4L192 512c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32v-65.9c-0.9-0.2-1.9-0.5-2.9-0.6c-2.7 0-5.4-0.1-8-0.1H192c-44.2 0-80-35.8-80-80v-32c0-44.2 35.8-80 80-80h240V64H64c-35.3 0-64 28.7-64 64v176c0 79.6 53.4 145.4 128 163.4c8.4 4.5 14.4 13.2 14.4 23.2c0 11.5-7.5 20.6-17.7 24.6c0.3 1.5 0.7 2.9 1 4.4c6.8 0.5 13.6 0.8 20.5 0.8c15.2 0 29.9-1.4 44.3-4.2c35.2-7.4 61.9-37.2 64.7-72.7H192c-28.6 0-51.5-23.6-51.5-52.7S163.4 320 192 320z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath d='M192 384h224c97.2 0 176-78.8 176-176c0-10.6-8.5-19.1-19.1-19.1H448V144h104.9c10.6 0 19.1-8.5 19.1-19.1V96c0-10.6-8.5-19.1-19.1-19.1H448c-26.5 0-48 21.5-48 48v48H192c-53 0-96 43-96 96c0 64.5 60.7 116.9 135.6 127.4L192 512c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32v-65.9c-0.9-0.2-1.9-0.5-2.9-0.6c-2.7 0-5.4-0.1-8-0.1H192c-44.2 0-80-35.8-80-80v-32c0-44.2 35.8-80 80-80h240V64H64c-35.3 0-64 28.7-64 64v176c0 79.6 53.4 145.4 128 163.4c8.4 4.5 14.4 13.2 14.4 23.2c0 11.5-7.5 20.6-17.7 24.6c0.3 1.5 0.7 2.9 1 4.4c6.8 0.5 13.6 0.8 20.5 0.8c15.2 0 29.9-1.4 44.3-4.2c35.2-7.4 61.9-37.2 64.7-72.7H192c-28.6 0-51.5-23.6-51.5-52.7S163.4 320 192 320z'/%3E%3C/svg%3E"
+        type="image/svg+xml">
 
-    
+
 
 
     <!-- google font cdn -->
@@ -24,18 +27,61 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
+
 <body>
-    
+    <!-- main container -->
+    <main class="px-16 lg:px-28 max-w-screen-xl mx-auto">
+        <!-- header section -->
+        <header class=" text-center md:flex pt-10 mb-20 md:gap-3">
+            <!-- text-div -->
+            <div>
+                <h1 class="font-extrabold text-4xl md:text-5xl lg:text-7xl">It's good <br> tea time at The <br> Tea House</h1>
+                <br>
+                <p class=" text-center font-medium text-lg text-gray-500">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <br>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white fon">Explore
+                    More <i class="fa-solid fa-arrow-trend-up"></i></button>
+            </div>
+            <!-- header-img div -->
+            <div class="relative mt-10">
+
+                <div>
+                    <img class="w-full" src="./images/banner.png" alt="">
+                </div>
+                <!-- card -->
+                <div
+                    class="md:flex absolute bg-white shadow-lg rounded-lg px-2 py-2 md:px-10 lg:py-4 justify-center items-center gap-2 top-28 md:top-80 md:left-32 lg:left-28">
+                    <!-- icone -->
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <!-- text -->
+                    <div>
+                        <h2 class="font-bold lg:text-2xl">5.00</h2>
+                        <p class="text-base text-gray-500 font-semibold">Trust Pilot Ratings</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </header>
+    </main>
+
 </body>
+
 </html>
